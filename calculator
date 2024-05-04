@@ -1,0 +1,33 @@
+def add(p,q):
+    return p+q
+def sub(p,q):
+    return p-q
+def mul(p,q):
+    return p*q
+def div(p,q):
+    return p/q
+print("Simple Claculator:")
+x=int(input("Enter the First number: "))
+y=int(input("Enter the Second number: "))
+print("Select option: ")
+print("A for Addition.")
+print("S for subtraction.")
+print("M for Multiplication.")
+print("D for Division.")
+print("E for Exit.")
+while(True):
+    option=input("Enter the options from (A/S/M/D/E): ")
+    if option in ('A','S','M','D','E'):
+        if option == 'A':
+            print("Addition of two numbers",x,"and",y,"is:",add(x,y))
+        elif option == 'S':
+            print("Subtraction of two numbers",x,"and",y,"is:",sub(x,y))
+        elif option == 'M':
+            print("Multiplication of two numbers",x,"and",y,"is:",mul(x,y))
+        elif option == 'D':
+            print("Division of two numbers",x,"and",y,"is: ",div(x,y))
+        elif option == 'E':
+            print("Thank you")
+            exit()
+    else:
+        print("Wrong Choice.")
